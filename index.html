@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="AlMatar Rentals — Premium Car Rental Karachi" />
+  <meta property="og:description"
+    content="Rent premium cars in Karachi. Easy booking, affordable rates, 24/7 service." />
+  <title>AlMatarRentals — Premium Car Rental Karachi</title>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      })
+      .catch(error => console.log('Header not found'));
+  </script>
+  <!-- NAV -->
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__tag" data-animate>Karachi's #1 Car Rental Service</p>
+        <h1 class="hero__title" data-animate>
+          Drive in<br><span class="hero__accent">Style.</span><br>Anywhere.
+        </h1>
+        <p class="hero__sub" data-animate>Premium cars. Affordable rates. 24/7 availability across Karachi & nearby
+          districts.</p>
+        <div class="hero__actions" data-animate>
+          <a href="#booking" class="btn btn--primary">Book Now</a>
+          <a href="#fleet" class="btn btn--ghost">See Our Fleet</a>
+        </div>
+        <div class="hero__stats" data-animate>
+          <div class="stat"><span class="stat__num">50+</span><span class="stat__label">Cars Available</span></div>
+          <div class="stat__divider"></div>
+          <div class="stat"><span class="stat__num">24/7</span><span class="stat__label">Service</span></div>
+          <div class="stat__divider"></div>
+          <div class="stat"><span class="stat__num">500+</span><span class="stat__label">Happy Clients</span></div>
+        </div>
+      </div>
+      <div class="hero__car" data-animate>
+        <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" class="car-svg">
+          <!-- Car Body -->
+          <ellipse cx="300" cy="230" rx="260" ry="18" fill="rgba(255,200,0,0.12)" />
+          <!-- Main body -->
+          <rect x="60" y="160" width="480" height="80" rx="16" fill="#1a1a2e" />
+          <!-- Cabin -->
+          <path d="M150 160 C170 100 200 80 260 75 L360 75 C410 80 440 100 455 160 Z" fill="#16213e" />
+          <!-- Windows -->
+          <path d="M175 155 C185 110 205 90 255 87 L295 87 L295 155 Z" fill="#0ea5e9" opacity="0.7" />
+          <path d="M305 87 L345 87 C390 90 410 110 425 155 L305 155 Z" fill="#0ea5e9" opacity="0.7" />
+          <!-- Window divider -->
+          <line x1="300" y1="87" x2="300" y2="155" stroke="#0f3460" stroke-width="4" />
+          <!-- Hood -->
+          <path d="M455 170 L520 175 L530 195 L455 195 Z" fill="#1a1a2e" />
+          <!-- Trunk -->
+          <path d="M145 170 L80 175 L70 195 L145 195 Z" fill="#1a1a2e" />
+          <!-- Wheels -->
+          <circle cx="160" cy="228" r="38" fill="#0f0f1a" />
+          <circle cx="160" cy="228" r="28" fill="#1a1a2e" />
+          <circle cx="160" cy="228" r="16" fill="#f59e0b" />
+          <circle cx="160" cy="228" r="6" fill="#0f0f1a" />
+          <circle cx="440" cy="228" r="38" fill="#0f0f1a" />
+          <circle cx="440" cy="228" r="28" fill="#1a1a2e" />
+          <circle cx="440" cy="228" r="16" fill="#f59e0b" />
+          <circle cx="440" cy="228" r="6" fill="#0f0f1a" />
+          <!-- Headlights -->
+          <rect x="520" y="172" width="28" height="14" rx="4" fill="#fbbf24" />
+          <rect x="520" y="172" width="28" height="14" rx="4" fill="url(#headlight)" opacity="0.8" />
+          <rect x="52" y="172" width="28" height="14" rx="4" fill="#ef4444" opacity="0.7" />
+          <!-- Grill -->
+          <rect x="522" y="190" width="26" height="16" rx="3" fill="#374151" />
+          <line x1="526" y1="190" x2="526" y2="206" stroke="#1a1a2e" stroke-width="2" />
+          <line x1="531" y1="190" x2="531" y2="206" stroke="#1a1a2e" stroke-width="2" />
+          <line x1="536" y1="190" x2="536" y2="206" stroke="#1a1a2e" stroke-width="2" />
+          <line x1="541" y1="190" x2="541" y2="206" stroke="#1a1a2e" stroke-width="2" />
+          <!-- Door lines -->
+          <line x1="300" y1="165" x2="300" y2="235" stroke="#0f3460" stroke-width="2" opacity="0.5" />
+          <line x1="200" y1="165" x2="200" y2="235" stroke="#0f3460" stroke-width="2" opacity="0.5" />
+          <line x1="400" y1="165" x2="400" y2="235" stroke="#0f3460" stroke-width="2" opacity="0.5" />
+          <!-- Door handles -->
+          <rect x="225" y="195" width="22" height="5" rx="2.5" fill="#f59e0b" />
+          <rect x="325" y="195" width="22" height="5" rx="2.5" fill="#f59e0b" />
+          <!-- Accent stripe -->
+          <rect x="65" y="200" width="470" height="4" rx="2" fill="#f59e0b" opacity="0.6" />
+          <defs>
+            <linearGradient id="headlight" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#fbbf24" />
+              <stop offset="100%" stop-color="white" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </section>
+
+    <!-- FLEET -->
+    <section class="fleet" id="fleet">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <p class="section-tag">Our Fleet</p>
+          <h2 class="section-title">Choose Your Ride</h2>
+          <p class="section-sub">From budget-friendly to luxury — we have the perfect car for every occasion</p>
+        </div>
+
+        <div class="fleet__filters" data-animate>
+          <button class="filter-btn is-active" data-filter="all">All Cars</button>
+          <button class="filter-btn" data-filter="economy">Economy</button>
+          <button class="filter-btn" data-filter="sedan">Sedan</button>
+          <button class="filter-btn" data-filter="suv">SUV</button>
+          <button class="filter-btn" data-filter="luxury">Luxury</button>
+        </div>
+
+        <div class="fleet__grid">
+
+          <div class="car-card" data-animate data-category="economy">
+            <div class="car-card__badge">Most Popular</div>
+            <div class="car-card__img">🚗</div>
+            <div class="car-card__info">
+              <h3>Suzuki Alto</h3>
+              <p class="car-card__type">Economy</p>
+              <div class="car-card__specs">
+                <span>⛽ Petrol</span>
+                <span>🪑 5 Seats</span>
+                <span>❄️ AC</span>
+              </div>
+              <div class="car-card__price">
+                <span class="price">PKR 3,000</span>
+                <span class="price-per">/day</span>
+              </div>
+              <a href="https://wa.me/923001234567?text=I want to book Suzuki Alto" class="btn btn--primary btn--full"
+                target="_blank">Book on WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="car-card" data-animate data-category="sedan">
+            <div class="car-card__img"><img height="200px" width="300px" src="Updated Blood Reign.png"
+                alt="Toyota Corolla"></div>
+            <div class="car-card__info">
+              <h3>Toyota Corolla</h3>
+              <p class="car-card__type">Sedan</p>
+              <div class="car-card__specs">
+                <span>⛽ Petrol</span>
+                <span>🪑 5 Seats</span>
+                <span>❄️ AC</span>
+              </div>
+              <div class="car-card__price">
+                <span class="price">PKR 5,500</span>
+                <span class="price-per">/day</span>
+              </div>
+              <a href="https://wa.me/923001234567?text=I want to book Toyota Corolla" class="btn btn--primary btn--full"
+                target="_blank">Book on WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="car-card" data-animate data-category="sedan">
+            <div class="car-card__img">🚘</div>
+            <div class="car-card__info">
+              <h3>Honda Civic</h3>
+              <p class="car-card__type">Sedan</p>
+              <div class="car-card__specs">
+                <span>⛽ Petrol</span>
+                <span>🪑 5 Seats</span>
+                <span>❄️ AC</span>
+              </div>
+              <div class="car-card__price">
+                <span class="price">PKR 7,000</span>
+                <span class="price-per">/day</span>
+              </div>
+              <a href="https://wa.me/923001234567?text=I want to book Honda Civic" class="btn btn--primary btn--full"
+                target="_blank">Book on WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="car-card" data-animate data-category="suv">
+            <div class="car-card__badge car-card__badge--gold">Premium</div>
+            <div class="car-card__img">🚐</div>
+            <div class="car-card__info">
+              <h3>Toyota Fortuner</h3>
+              <p class="car-card__type">SUV</p>
+              <div class="car-card__specs">
+                <span>⛽ Diesel</span>
+                <span>🪑 7 Seats</span>
+                <span>❄️ AC</span>
+              </div>
+              <div class="car-card__price">
+                <span class="price">PKR 12,000</span>
+                <span class="price-per">/day</span>
+              </div>
+              <a href="https://wa.me/923001234567?text=I want to book Toyota Fortuner"
+                class="btn btn--primary btn--full" target="_blank">Book on WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="car-card" data-animate data-category="suv">
+            <div class="car-card__img">🚌</div>
+            <div class="car-card__info">
+              <h3>Hyundai Tucson</h3>
+              <p class="car-card__type">SUV</p>
+              <div class="car-card__specs">
+                <span>⛽ Petrol</span>
+                <span>🪑 5 Seats</span>
+                <span>❄️ AC</span>
+              </div>
+              <div class="car-card__price">
+                <span class="price">PKR 10,000</span>
+                <span class="price-per">/day</span>
+              </div>
+              <a href="https://wa.me/923001234567?text=I want to book Hyundai Tucson" class="btn btn--primary btn--full"
+                target="_blank">Book on WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="car-card" data-animate data-category="luxury">
+            <div class="car-card__badge car-card__badge--black">Luxury</div>
+            <div class="car-card__img">🏎️</div>
+            <div class="car-card__info">
+              <h3>Toyota Prado</h3>
+              <p class="car-card__type">Luxury SUV</p>
+              <div class="car-card__specs">
+                <span>⛽ Diesel</span>
+                <span>🪑 7 Seats</span>
+                <span>❄️ AC</span>
+              </div>
+              <div class="car-card__price">
+                <span class="price">PKR 18,000</span>
+                <span class="price-per">/day</span>
+              </div>
+              <a href="https://wa.me/923001234567?text=I want to book Toyota Prado" class="btn btn--primary btn--full"
+                target="_blank">Book on WhatsApp</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why" id="why">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <p class="section-tag">Why AlMatar Rentals</p>
+          <h2 class="section-title">The AlMatar Rentals Difference</h2>
+        </div>
+        <div class="why__grid">
+          <div class="why-card" data-animate>
+            <div class="why-card__icon">🕐</div>
+            <h3>24/7 Available</h3>
+            <p>Day or night, we're always ready. Book anytime and we'll be there.</p>
+          </div>
+          <div class="why-card" data-animate>
+            <div class="why-card__icon">✅</div>
+            <h3>Verified Cars</h3>
+            <p>Every car is regularly maintained, clean, and fully insured for your safety.</p>
+          </div>
+          <div class="why-card" data-animate>
+            <div class="why-card__icon">💰</div>
+            <h3>Best Rates</h3>
+            <p>No hidden charges. Transparent pricing with the most competitive rates in Karachi.</p>
+          </div>
+          <div class="why-card" data-animate>
+            <div class="why-card__icon">📲</div>
+            <h3>Easy Booking</h3>
+            <p>Book instantly via WhatsApp. No complicated forms, no waiting.</p>
+          </div>
+          <div class="why-card" data-animate>
+            <div class="why-card__icon">🗺️</div>
+            <h3>All Karachi</h3>
+            <p>We cover Karachi and all nearby districts. Drop-off anywhere you need.</p>
+          </div>
+          <div class="why-card" data-animate>
+            <div class="why-card__icon">🤝</div>
+            <h3>Trusted Service</h3>
+            <p>500+ satisfied customers and growing. Your satisfaction is our priority.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="booking" id="booking">
+      <div class="container">
+        <div class="booking__inner">
+          <div class="booking__text" data-animate>
+            <p class="section-tag">Quick Booking</p>
+            <h2 class="section-title">Reserve Your Car<br>in Minutes</h2>
+            <p>Fill the form and we'll contact you on WhatsApp within minutes to confirm your booking.</p>
+            <div class="booking__features">
+              <div>✅ Instant confirmation</div>
+              <div>✅ No advance payment required</div>
+              <div>✅ Free cancellation</div>
+            </div>
+          </div>
+          <div class="booking__form" data-animate>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="name" placeholder="e.g. Ahmed Khan" />
+            </div>
+            <div class="form-group">
+              <label>WhatsApp Number</label>
+              <input type="tel" id="phone" placeholder="e.g. 0300-1234567" />
+            </div>
+            <div class="form-group">
+              <label>Car Type</label>
+              <select id="cartype">
+                <option value="">Select a car type</option>
+                <option>Economy (Suzuki Alto)</option>
+                <option>Sedan (Toyota Corolla)</option>
+                <option>Sedan (Honda Civic)</option>
+                <option>SUV (Hyundai Tucson)</option>
+                <option>SUV (Toyota Fortuner)</option>
+                <option>Luxury (Toyota Prado)</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Pick-up Date</label>
+                <input type="date" id="pickup" />
+              </div>
+              <div class="form-group">
+                <label>Return Date</label>
+                <input type="date" id="returndate" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Pick-up Location</label>
+              <input type="text" id="location" placeholder="e.g. DHA Phase 6, Karachi" />
+            </div>
+            <button class="btn btn--primary btn--full" id="bookBtn">
+              📲 Send Booking Request on WhatsApp
+            </button>
+            <p class="form-note">We'll reply within 15 minutes!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <p class="section-tag">Reviews</p>
+          <h2 class="section-title">What Our Clients Say</h2>
+        </div>
+        <div class="testimonials__grid">
+          <div class="testi-card" data-animate>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Booked a Fortuner for a family trip to Hyderabad. The car was spotless and the driver was very
+              professional. Highly recommended!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">AK</div>
+              <div>
+                <strong>Ahmed Khan</strong>
+                <span>Karachi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-animate>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Great service! Booked via WhatsApp and within 30 minutes the car was at my doorstep. Price was very
+              reasonable."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SF</div>
+              <div>
+                <strong>Sara Fatima</strong>
+                <span>DHA, Karachi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-animate>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Used them for corporate travel for 2 weeks. Very reliable, always on time. Will definitely book again
+              for our company events."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">MR</div>
+              <div>
+                <strong>Muhammad Raza</strong>
+                <span>Clifton, Karachi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__info" data-animate>
+            <p class="section-tag">Contact Us</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact__details">
+              <a href="https://wa.me/923001234567" target="_blank" class="contact-item">
+                <span class="contact-item__icon">📲</span>
+                <div>
+                  <strong>WhatsApp (Fastest)</strong>
+                  <span>0300-1234567</span>
+                </div>
+              </a>
+              <a href="tel:+923001234567" class="contact-item">
+                <span class="contact-item__icon">📞</span>
+                <div>
+                  <strong>Call Us</strong>
+                  <span>0300-1234567</span>
+                </div>
+              </a>
+              <div class="contact-item">
+                <span class="contact-item__icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Karachi, Sindh, Pakistan</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item__icon">🕐</span>
+                <div>
+                  <strong>Available</strong>
+                  <span>24 Hours, 7 Days a Week</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact__social">
+              <a href="#" class="social-btn">📘 Facebook</a>
+              <a href="#" class="social-btn">📸 Instagram</a>
+            </div>
+          </div>
+          <div class="contact__cta" data-animate>
+            <div class="cta-box">
+              <h3>Ready to Book?</h3>
+              <p>Message us on WhatsApp right now and get your car confirmed in minutes!</p>
+              <a href="https://wa.me/923001234567?text=Assalamualaikum! I want to rent a car."
+                class="btn btn--primary btn--large" target="_blank">
+                💬 Chat on WhatsApp Now
+              </a>
+              <p class="cta-note">Available 24/7 · Reply within 15 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">AlMatar <span>Rentals </span></a>
+          <p>Karachi's trusted car rental service. Available 24/7 across Karachi and nearby districts.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <a href="#fleet">Our Fleet</a>
+          <a href="#why">Why Us</a>
+          <a href="#booking">Book Now</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__links">
+          <h4>Cars</h4>
+          <a href="#">Economy Cars</a>
+          <a href="#">Sedans</a>
+          <a href="#">SUVs</a>
+          <a href="#">Luxury Cars</a>
+        </div>
+        <div class="footer__links">
+          <h4>Contact</h4>
+          <a href="https://wa.me/923001234567" target="_blank">WhatsApp: 0300-1234567</a>
+          <a href="tel:+923001234567">Call: 0300-1234567</a>
+          <a href="#">Karachi, Pakistan</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 AlMatar Rentals. All rights reserved. | Karachi, Pakistan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923001234567?text=Assalamualaikum! I want to rent a car." class="whatsapp-float"
+    target="_blank" title="Chat on WhatsApp">
+    💬
+  </a>
+
+  <script defer src="script.js"></script>
+</body>
+
+</html>
